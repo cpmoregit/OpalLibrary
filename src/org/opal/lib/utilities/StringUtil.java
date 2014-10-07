@@ -39,22 +39,6 @@ public class StringUtil {
 			}
 		}
 		
-		if(returnIsNumeric){
-			if(dotCount==1){
-					try{
-						Double number = Double.valueOf(trimmedString);
-					}catch(Exception exp){
-						returnIsNumeric = false;
-					}
-			}else{
-				try{
-					Long l = Long.valueOf(trimmedString);
-				}catch(Exception exp){
-					returnIsNumeric = false;
-				}
-		    }
-	   }
-		
 		return returnIsNumeric;
 	}
 
