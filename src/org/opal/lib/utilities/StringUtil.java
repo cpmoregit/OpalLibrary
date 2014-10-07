@@ -60,6 +60,7 @@ public class StringUtil {
 				if (!Character.isDigit(byteString[i])) {
 					 if (!Character.isAlphabetic(byteString[i])) {
 						 returnIsAphaNumeric = false;
+						 break;
 					}else{
 							continue;
 					}						 
