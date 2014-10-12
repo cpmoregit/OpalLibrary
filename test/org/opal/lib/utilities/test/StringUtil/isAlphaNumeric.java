@@ -2,7 +2,7 @@ package org.opal.lib.utilities.test.StringUtil;
 
 import org.opal.lib.utilities.StringUtil;
 
-public class isAphaNumeric {
+public class isAlphaNumeric {
 	public void execute() {
 		String testData[]={
 				"1",
@@ -21,7 +21,7 @@ public class isAphaNumeric {
 		};
 
 		for(int i=0;i<testData.length;i++){
-			System.out.println( testData[i] + " : " + StringUtil.isAphaNumeric(testData[i]) );
+			System.out.println( testData[i] + " : " + StringUtil.isAlphaNumeric(testData[i]) );
 		} 
 	}
 }

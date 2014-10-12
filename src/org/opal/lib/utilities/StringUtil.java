@@ -19,7 +19,7 @@ public class StringUtil {
 			byte[] byteString = trimmedString.getBytes();
 
 			int length = byteString.length;
-			
+
 			for (int i = 0; i < length; i++) {
 
 				if (!Character.isDigit(byteString[i])) {
@@ -38,37 +38,37 @@ public class StringUtil {
 				}
 			}
 		}
-		
+
 		return returnIsNumeric;
 	}
 
-	public static boolean isAphaNumeric(String varString) {
+	public static boolean isAlphaNumeric(String varString) {
 		boolean returnIsAphaNumeric = true;
 		String trimmedString = null;
-		
+
 		if (varString == null) {
 			returnIsAphaNumeric = false;
 		} else {
 			trimmedString = varString.trim();
 
 			byte[] byteString = trimmedString.getBytes();
-
 			int length = byteString.length;
-			
+
 			for (int i = 0; i < length; i++) {
-					
+
 				if (!Character.isDigit(byteString[i])) {
-					 if (!Character.isAlphabetic(byteString[i])) {
-						 returnIsAphaNumeric = false;
-						 break;
-					}else{
-							continue;
-					}						 
+					if (!Character.isAlphabetic(byteString[i])) {
+						returnIsAphaNumeric = false;
+						break;
+					} else {
+						continue;
+					}
 				}
+				
 			}
 		}
-		
+
 		return returnIsAphaNumeric;
 	}
-	
+
 }
