@@ -71,12 +71,12 @@ public class StringUtil {
 		return returnIsAphaNumeric;
 	}
 	
-	public String retrieveDomainFromEMailId(String someEmail)
+	public static String retrieveDomainFromEMailId(String someEmail)
 	{
 	    return  someEmail.substring(someEmail.indexOf("@") + 1);
 	}
 	
-	public String retrieveDomainFromURL(String url) {
+	public static String retrieveDomainFromURL(String url) {
 		String domainName = new String(url);
 
 		  int index = domainName.indexOf("://");
